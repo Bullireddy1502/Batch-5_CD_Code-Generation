@@ -1,1 +1,17 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Save Text to File</title>
+</head>
+<body>
+	{% if content %}
+		<p>The content of the file is:</p>
+		<pre>{{ content }}</pre>
+	{% endif %}
+	<form action="/" method="post">
+		<label for="text">Enter text:</label><br>
+		<textarea name="text" rows="5" cols="30"></textarea><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
